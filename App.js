@@ -18,7 +18,7 @@ const Tab = createBottomTabNavigator();
 export default function App() {
 	return (
 		<NavigationContainer>
-			<View style={styles.screen}>
+			<View>
 				<Header />
 			</View>
 
@@ -59,7 +59,5 @@ export default function App() {
 }
 
 const styles = StyleSheet.create({
-	screen: {
-		flex: 1,
-	},
+	
 });
