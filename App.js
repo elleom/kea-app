@@ -6,12 +6,12 @@ import Ionicons from "@expo/vector-icons/Ionicons";
 import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
-import HomeScreen from "./screens/Home";
+import HomeScreen from "./screens/HomeScreen";
 import Discover from "./screens/Discover";
 import Chat from "./screens/Chat";
 import Menu from "./screens/Menu";
-
 import Header from "./components/Header";
+import Colors from "./consts/colors";
 
 const Tab = createBottomTabNavigator();
 
@@ -44,8 +44,10 @@ export default function App() {
 					},
 				})}
 				tabBarOptions={{
-					activeTintColor: "tomato",
-					inactiveTintColor: "gray",
+					activeTintColor: "#f8f5f9",
+					inactiveTintColor: "#f8f5f9",
+					inactiveBackgroundColor: Colors.secondary,
+					activeBackgroundColor: Colors.primary,
 				}}>
 				<Tab.Screen name='Home' component={HomeScreen} />
 				<Tab.Screen name='Discover' component={Discover} />
