@@ -19,7 +19,7 @@ export default function App() {
 	return (
 		<NavigationContainer>
 			<View style={styles.screen}>
-				<Header title='KEApp' />
+				<Header />
 			</View>
 
 			<Tab.Navigator
