@@ -7,7 +7,7 @@ const DATA = [
    {
      id: 'bd7acbea-c1b1-46c2-aed5-3ad53abb28ba',
      title: 'HACK THE BOX',
-     img: '../assets/images/blocs-and-walls.png'
+     img: '../assets/images/hackthebox.png'
    },
    {
      id: '3ac68afc-c605-48d3-a4f8-fbd91aa97f63',
@@ -22,12 +22,13 @@ const DATA = [
  ];
  
  const Item = props => (
+   
    <View style={styles.thumbsContainer}>
      <Text style={styles.title}>{props.title}</Text>
      <Text style={styles.title}>{props.img}- TO FIX</Text>
      <Image
 				style={styles.tinyLogo}
-				source={{uri: props.img}}
+				source={require('../assets/images/hackthebox.png')} // this needs to be fixed
             
 			/>
    </View>
