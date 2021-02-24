@@ -7,17 +7,17 @@ const DATA = [
    {
      id: 'bd7acbea-c1b1-46c2-aed5-3ad53abb28ba',
      title: 'HACK THE BOX',
-     img: '../assets/images/hackthebox.png'
+     img: require('../assets/images/hackthebox.png')
    },
    {
      id: '3ac68afc-c605-48d3-a4f8-fbd91aa97f63',
      title: 'FOOD CLUB',
-     img: '../assets/images/food_club.jpg'
+     img: require('../assets/images/food_club.jpg')
    },
    {
      id: '58694a0f-3da1-471f-bd96-145571e29d72',
      title: 'CLIMBING CLUB',
-     img: '../assets/images/blocs-and-walls.png'
+     img: require('../assets/images/blocs-and-walls.png')
    },
  ];
  
@@ -28,7 +28,7 @@ const DATA = [
      <Text style={styles.title}>{props.img}- TO FIX</Text>
      <Image
 				style={styles.tinyLogo}
-				source={require('../assets/images/hackthebox.png')} // this needs to be fixed
+				source={props.img} // this needs to be fixed
             
 			/>
    </View>
